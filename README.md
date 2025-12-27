@@ -1,0 +1,59 @@
+# PlayShadeTest
+
+Standalone test application for previewing and developing the FadeImageBlur shader effect in real-time.
+
+## Quick Start
+
+1. **Run the application:**
+   ```
+   bin\Release\PlayShadeTest.exe
+   ```
+
+2. **Load an image** and adjust the blur slider to see real-time preview
+
+3. **Edit the shader** (see [DEVELOPER_GUIDE.md](DEVELOPER_GUIDE.md) for details)
+
+## Features
+
+- ✅ **Real-time blur preview** - Adjust blur amount with a slider and see results instantly
+- ✅ **Load any image** - Test the blur effect on any image file (JPG, PNG, BMP, GIF)
+- ✅ **Simple interface** - Clean, minimal UI focused on testing the blur shader
+- ✅ **Developer-friendly** - Easy to edit shader source and test changes
+- ✅ **No dependencies** - Standalone executable, no Playnite installation required
+
+## For Developers
+
+See [DEVELOPER_GUIDE.md](DEVELOPER_GUIDE.md) for:
+- How to edit the shader source code
+- Shader compilation workflow
+- Common modifications and examples
+- Troubleshooting guide
+
+## Building
+
+```bash
+cd source\PlayShadeTest
+msbuild PlayShadeTest.csproj /p:Configuration=Release /p:Platform=AnyCPU
+```
+
+## Requirements
+
+- .NET Framework 4.6.2
+- Windows (WPF application)
+- Windows SDK (for shader compilation - optional, pre-compiled shader included)
+
+## Files
+
+- `Controls/FadeImageBlur.fx` - HLSL shader source (edit this!)
+- `Controls/FadeImageBlur.ps` - Compiled shader (auto-generated)
+- `FadeImageBlurEffect.cs` - WPF ShaderEffect wrapper
+- `BuildShader.ps1` - Shader compilation script
+
+## Usage
+
+1. Run `PlayShadeTest.exe`
+2. Click "Load Image..." to select an image file
+3. Use the slider to adjust blur amount (0-100)
+4. See the blur effect update in real-time
+
+Perfect for testing shader modifications and seeing results instantly!
