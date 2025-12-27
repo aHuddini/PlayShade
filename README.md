@@ -4,21 +4,15 @@ Standalone test application for previewing and developing the FadeImageBlur shad
 
 ## Quick Start
 
-1. **Run the application:**
-   ```
-   bin\Release\PlayShadeTest.exe
-   ```
-
+1. **Run the application**
+   
 2. **Load an image** and adjust the blur slider to see real-time preview
-
-3. **Edit the shader** (see [DEVELOPER_GUIDE.md](DEVELOPER_GUIDE.md) for details)
 
 ## Features
 
 - ✅ **Real-time blur preview** - Adjust blur amount with a slider and see results instantly
 - ✅ **Load any image** - Test the blur effect on any image file (JPG, PNG, BMP, GIF)
 - ✅ **Simple interface** - Clean, minimal UI focused on testing the blur shader
-- ✅ **Developer-friendly** - Easy to edit shader source and test changes
 - ✅ **No dependencies** - Standalone executable, no Playnite installation required
 
 ## For Developers
