@@ -1,6 +1,10 @@
-# PlayShadeTest
+# PlayShade
 
-Standalone test application for previewing and developing the FadeImageBlur shader effect in real-time.
+A repo quickly spruced up to organize the creation of shader effects for use/test in Playnite. Also includes a quick test application to test custom shader effects.
+
+.fx files need to be first created with relevant shader code (HLSL) and then compiled with fxc to generate the final .ps file that can be used in WPF environments. Shader effects should target ps_2_0 (ps_3_0 doesn't seem to work for Playnite's WPF framework).
+
+Currently includes a shader effect for Gaussian Blur. The blur is meant to be an alternative replacement for WPF's BlurEffect control in Playnite.
 
 ## Quick Start
 
